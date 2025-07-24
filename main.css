@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Noto+Serif:wght@100..900&display=swap');
+
+:root {
+  --body-bg: #f5f8ff;
+  --accent-clr: #e95a08;
+  --paragraph-clr: hsl(0, 0%, 0%, 0.5);
+  --font-inter: 'Inter', sans-serif;
+  --font-size: clamp(0.875rem, 0.6827rem + 0.7692vw, 1.375rem);
+}
+
+/* ! resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: var(--font-inter);
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
