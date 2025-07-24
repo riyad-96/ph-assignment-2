@@ -332,3 +332,112 @@ h1 {
     }
   }
 }
+
+/* ! Latest deals styling */
+.latest-deal-section {
+  display: grid;
+  gap: 3rem;
+  max-width: 1140px;
+  margin-inline: auto;
+  box-sizing: content-box;
+  padding-inline: 1rem;
+
+  margin-block-start: 5rem;
+
+  .text-container {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+
+    h2 {
+      font-size: var(--font-h2-fluid);
+    }
+    p {
+      max-width: 60ch;
+    }
+  }
+}
+.deal-grid-container {
+  --gap: clamp(1rem, 0.8077rem + 0.7692vw, 1.5rem);
+
+  display: grid;
+  gap: var(--gap);
+
+  > div:first-of-type {
+    display: grid;
+    gap: var(--gap);
+  }
+
+  .image-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      transition: scale 500ms;
+      transform-origin: center;
+    }
+
+    > div {
+      position: absolute;
+      inset: 0;
+      background-color: hsl(0, 0%, 0%, 0.25);
+      color: #fff;
+      display: grid;
+      justify-items: center;
+      align-content: center;
+      gap: 0.5rem;
+      transition: background-color 300ms;
+
+      span {
+        font-family: var(--font-noto-serif);
+        font-size: 1.25rem;
+      }
+
+      a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        transition: text-underline-offset 200ms;
+
+        &:hover {
+          text-underline-offset: 7px;
+        }
+      }
+    }
+  }
+}
+
+@media (width >= 750px) {
+  .deal-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    > .image-container {
+      grid-column: span 2;
+    }
+
+    > .image-container > div {
+      span {
+        font-size: 40px;
+      }
+
+      a {
+        font-size: 28px;
+
+        &:hover {
+          text-underline-offset: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (pointer: fine) {
+  .deal-grid-container .image-container:hover > div {
+    background-color: hsl(0, 0%, 0%, 0.5);
+  }
+  .deal-grid-container .image-container:hover > img {
+    scale: 1.2;
+  }
+}
