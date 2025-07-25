@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <label class="sidebar-toggle-btn" for="sidebar-toggler-input">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM8 5H4V19H8V5ZM10 5V19H20V5H10Z"></path></svg>
+    </label>
+    <input id="sidebar-toggler-input" class="sibebar-toggler-input" type="checkbox" />
+    
     <header>
       <div>
         <div class="header-logo-container">
@@ -16,8 +21,8 @@
         <div class="nav-container">
           <nav>
             <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">About us</a>
+            <a href="#shop">Shop</a>
+            <a href="#footer">About us</a>
           </nav>
           <div class="cart">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
@@ -29,7 +34,7 @@
               <span>Cart</span>
               <span>($56)</span>
             </div>
-            <a href="#" class="cart-link"></a>
+            <a href="#cart" class="cart-link"></a>
           </div>
         </div>
       </div>
@@ -50,7 +55,7 @@
         </div>
       </section>
 
-      <section class="our-plant-section">
+      <section id="cart" class="our-plant-section">
         <div>
           <h2><span class="text-accent">Our</span> Plants</h2>
           <p class="paragraph">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -205,7 +210,7 @@
         </div>
       </section>
 
-      <section class="latest-deal-section">
+      <section id="shop" class="latest-deal-section">
         <div class="text-container">
           <h2><span class="text-accent">Latest</span> Deals</h2>
           <p class="paragraph">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -230,7 +235,7 @@
           </div>
 
           <div class="image-container">
-            <img src="./assets/deal-zabo.png" alt="zabo">
+            <img src="./assets/deal-zabo.png" alt="zabo" />
             <div>
               <span>25% Off | Zaba Plant</span>
               <a href="#">Shop Now</a>
@@ -241,13 +246,13 @@
 
       <section class="email-section">
         <div>
-          <img src="./assets/news-letter-bg.png" alt="">
+          <img src="./assets/news-letter-bg.png" alt="" />
         </div>
 
         <div class="news-letter-container">
           <h3>Join the colorful Bunch</h3>
           <form>
-            <input type="email" placeholder="Write email">
+            <input type="email" placeholder="Write email" />
             <button type="reset">
               <span>Subscribe</span>
               <span class="overlay"></span>
@@ -256,5 +261,51 @@
         </div>
       </section>
     </main>
+
+    <footer id="footer">
+      <div class="logo-text-container">
+        <div>
+          <img src="./assets/logo.png" alt="Company logo" />
+        </div>
+        <p class="paragraph">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+      </div>
+
+      <div class="links-container">
+        <div>
+          <a href="#">Home</a>
+          <a href="#footer">About Us</a>
+          <a href="#footer">Blog</a>
+          <a href="#footer">FAQ</a>
+          <a href="#footer">Contact Us</a>
+        </div>
+
+        <div>
+          <a href="#footer">Features</a>
+          <a href="#shop">Pricing</a>
+          <a href="#footer">Privacy Policy</a>
+          <a href="#footer">Terms of Services</a>
+          <a href="#footer">Help Center</a>
+        </div>
+      </div>
+
+      <div class="social-media-links">
+        <div>
+          <img src="./assets/icon-linkedin.png" alt="LinkedIn link" />
+          <a href="#footer"></a>
+        </div>
+        <div>
+          <img src="./assets/icon-twitter.png" alt="Twitter link" />
+          <a href="#footer"></a>
+        </div>
+        <div>
+          <img src="./assets/icon-facebook.png" alt="Facebook link" />
+          <a href="#footer"></a>
+        </div>
+        <div>
+          <img src="./assets/icon-youtube.png" alt="YouTube link" />
+          <a href="#footer"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
