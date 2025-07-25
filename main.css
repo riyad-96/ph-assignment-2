@@ -200,6 +200,12 @@ img {
       padding-inline: 1rem;
       padding-block: 0.325rem;
       font-weight: 500;
+
+      @media (pointer: fine) {
+        &:hover {
+          background-color: hsl(0, 0%, 50%, 0.1);
+        }
+      }
     }
   }
 }
