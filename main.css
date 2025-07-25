@@ -64,6 +64,7 @@ h3,
 h4 {
   font-family: var(--font-noto-serif);
   color: var(--text-clr);
+  transition: color 200ms;
 }
 
 button,
@@ -334,6 +335,7 @@ h1 {
   font-size: var(--font-para-fluid);
   color: var(--paragraph-clr);
   letter-spacing: 0.7px;
+  transition: color 200ms;
 }
 
 .hero-section {
@@ -793,4 +795,8 @@ footer {
   .social-media-links {
     justify-self: flex-end;
   }
+}
+
+.smooth-color {
+  transition: color 200ms, background-color 200ms, border-color 200ms;
 }
